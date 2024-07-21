@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Competitions from './Competitions';
 import Education from './Education';
-import Projects from './Projects';
+import ProjectRoute from './Projects/route';
 import Skill from './Skill';
 import { Image } from 'react-native';
 const Tab = createBottomTabNavigator()
@@ -30,7 +30,7 @@ export default function Home(){
                 top:10
             }
           }}/>
-            <Tab.Screen component={Projects} name='Projects'
+            <Tab.Screen component={ProjectRoute} name='ProjectRoute'
             options={{
                 tabBarIcon: ({ focused }) => (
                   <Image style={{width:24,height:24}}

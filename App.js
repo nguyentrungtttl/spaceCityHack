@@ -5,6 +5,7 @@ import Intro from "./screens/Intro";
 import Ready from "./screens/Ready";
 import RoadMap from "./screens/Roadmap";
 import Home from "./screens/Home/route";
+import Project from "./screens/Project";
 const Theme = createNativeStackNavigator()
 export default function App(){
     return(
@@ -15,6 +16,7 @@ export default function App(){
                 <Theme.Screen component={Ready} name="Ready" options={{headerShown:false}}/>
                 <Theme.Screen component={RoadMap} name="RoadMap" options={{headerShown:false}}/>
                 <Theme.Screen component={Home} name="Home" options={{headerShown:false}}/>
+                <Theme.Screen component={Project} name="Project" options={{headerShown:false}}/>
             </Theme.Navigator>
         </NavigationContainer>
     )
