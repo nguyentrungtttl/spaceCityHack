@@ -16,7 +16,8 @@ import Failure from "./screens/Failure";
 export default function App() {
     return (
         <NavigationContainer independent={true}>
-            <Theme.Navigator initialRouteName="Quiz">
+            <Theme.Navigator initialRouteName="Intro">
+                <Theme.Screen component={Quiz} name="Quiz" options={{ headerShown: true }} />
                 <Theme.Screen component={Project} name="Project" options={{headerShown:false}}/>
                 <Theme.Screen component={Failure} name="Failure" options={{ headerShown: true }} />
                 <Theme.Screen component={Success} name="Success" options={{ headerShown: true }} />
@@ -26,7 +27,6 @@ export default function App() {
                 <Theme.Screen component={Ready} name="Ready" options={{ headerShown: false }} />
                 <Theme.Screen component={RoadMap} name="RoadMap" options={{ headerShown: false }} />
                 <Theme.Screen component={Home} name="Home" options={{ headerShown: false }} />
-                <Theme.Screen component={Quiz} name="Quiz" options={{ headerShown: true }} />
             </Theme.Navigator>
         </NavigationContainer>
     )

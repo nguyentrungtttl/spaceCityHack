@@ -3,15 +3,22 @@ import { LinearGradient } from "expo-linear-gradient"
 import React,{useState} from "react"
 import ReactNativeModal from "react-native-modal"
 import { useNavigation } from "@react-navigation/native"
+import * as Linking from 'expo-linking';
+
+
 const screenHeight = Dimensions.get("screen").height
 const screenWidth = Dimensions.get("screen").width
 export default function Projects({navigation}){
     // const navigation = useNavigation()
+    const handleLinkPress = () => {
+        Linking.openURL('https://www.khamphakhoahoc.com'); // Replace with your external URL
+      };
+
     const [data,setData] = useState([
-        {image:require("../../../assets/volun.png"),isPressed:false,date:"dd/mm/yyyy",name:"Volunteer for education"},
-        {image:require("../../../assets/volun.png"),isPressed:false,date:"dd/mm/yyyy",name:"Volunteer for education"},
-        {image:require("../../../assets/volun.png"),isPressed:false,date:"dd/mm/yyyy",name:"Volunteer for education"},
-        {image:require("../../../assets/volun.png"),isPressed:false,date:"dd/mm/yyyy",name:"Volunteer for education"},
+        {image:require("../../../assets/volun.png"),isPressed:false,date:"21/07/2024",name:"Co-founder for STEM"},
+        {image:require("../../../assets/volun.png"),isPressed:false,date:"22/07/2024",name:"Volunteer for education"},
+        {image:require("../../../assets/volun.png"),isPressed:false,date:"23/08/2024",name:"Volunteer for environment"},
+        {image:require("../../../assets/volun.png"),isPressed:false,date:"04/09/2024",name:"Core team for MUN"},
     ])
     return(
         <View style={{flex:1}}>
@@ -32,7 +39,7 @@ export default function Projects({navigation}){
                 renderItem={({item,index})=>{
                     return(
                         <View>
-                        <TouchableOpacity onPress={()=>navigation.navigate("project")} style={{flexDirection:"row"}}>
+                        <TouchableOpacity onPress={handleLinkPress} style={{flexDirection:"row"}}>
                         <Image source={item.image}/>
                         <View style={{marginLeft:10}}>
                             <Text style={{fontWeight:"bold",fontSize:16}}>{item.name}</Text>
