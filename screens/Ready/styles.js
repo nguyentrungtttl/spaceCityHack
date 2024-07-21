@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
         borderRadius:20
     },
     boldText:{
-        fontWeight:"700",
+        // fontWeight:"700",
         fontSize:40
     },
     nor:{
@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
         width:"65%",
         marginTop:20,
         fontSize:17,
-        fontWeight:"500"
+        // fontWeight:"500"
     },
     whiteText:{
         position:"absolute",

@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
         elevation: 5,
-        fontWeight:20
+        // fontWeight:'20',
     },
     textinputinlineimage:{
         position:"absolute",
@@ -50,13 +50,13 @@ export const styles = StyleSheet.create({
     },
     title:{
         marginTop:30,
-        fontWeight:"bold",
+        // fontWeight:"bold",
         fontSize:40,
         color:"white",
         
     },
     whitetext:{
-        fontWeight:300,
+        // fontWeight:300,
         color:"white",
         fontSize:17,
         marginVertical:15
@@ -64,12 +64,12 @@ export const styles = StyleSheet.create({
     whiteBoldUnderlinedText:{
         textDecorationLine:"underline",
         color:"white",
-        fontWeight:"bold",
+        // fontWeight:"bold",
         fontSize:16,
         marginTop:20
     },
     whiteBold:{
-        fontWeight:"bold",
+        // fontWeight:"bold",
         color:"white",
         fontSize:17
     }

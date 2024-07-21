@@ -16,8 +16,8 @@ export default function Education(){
 
             <View style={{width:"100%",position:"absolute",alignItems:"center",top:60}}>
                 <Image style={{width:207.2}} source={require("../../../assets/edu.png")}/>
-                <Text style={{fontWeight:"bold",fontSize:40,color:"white"}}>Education</Text>
-                <Text style={{fontWeight:"bold",fontSize:20,color:"white",marginTop:10}}>Tap into any courses to see it details</Text>
+                <Text style={{fontSize:40,color:"white"}}>Education</Text>
+                <Text style={{fontSize:20,color:"white",marginTop:10}}>Tap into any courses to see it details</Text>
 
                 <FlatList
                 data={data}
@@ -34,7 +34,7 @@ export default function Education(){
                         }} style={{flexDirection:"row"}}>
                         <Image source={item.image}/>
                         <View style={{marginLeft:10}}>
-                            <Text style={{fontWeight:"bold",fontSize:16}}>{item.name}</Text>
+                            <Text style={{fontSize:16}}>{item.name}</Text>
                             <Text style={{fontSize:15}}>{item.type}</Text>
                         </View>
                     </TouchableOpacity>

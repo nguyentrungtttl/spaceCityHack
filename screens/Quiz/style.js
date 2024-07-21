@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   },
   question: {
     fontSize: 24,
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     color: '#2F4F4F',
   },
   subtitle: {
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     color: '#2F4F4F',
   },
   optionTextSelected: {
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     color: '#FFF',
   },
   pagination: {
