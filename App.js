@@ -9,7 +9,7 @@ import Project from "./screens/Project";
 const Theme = createNativeStackNavigator()
 import Quiz from "./screens/Quiz";
 import Chatbot from "./screens/Chatbot";
-import Success from "./screens/Success/style";
+import Success from "./screens/Success";
 import Failure from "./screens/Failure";
 
 

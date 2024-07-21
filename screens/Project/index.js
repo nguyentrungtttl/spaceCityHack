@@ -2,7 +2,7 @@ import {View,Image,Text,TouchableOpacity,Dimensions} from "react-native"
 const screenHeight = Dimensions.get("screen").height
 const screenWidth = Dimensions.get("screen").width
 
-export default function Project(){
+export default function Project({navigation}){
     return (
         <View style={{flex:1}}>
             <Image source={require("../../assets/ninhbinh.png")} style={{width:screenWidth,height:screenHeight*0.6}}/>
@@ -29,7 +29,7 @@ Binh city.</Text>
     <Text style={{marginLeft:10}}>Duration: 24th May - 31st August</Text>
 </View>
 
-<TouchableOpacity style={{backgroundColor:"#B9509A",width:"50%",alignSelf:"center",padding:15,marginTop:20,alignItems:"center",borderRadius:20}}>
+<TouchableOpacity onPress={()=>navigation.navigate("Success")} style={{backgroundColor:"#B9509A",width:"50%",alignSelf:"center",padding:15,marginTop:20,alignItems:"center",borderRadius:20}}>
     <Text style={{fontWeight:"bold",fontSize:18,color:"white"}}>How fit is it?</Text>
 </TouchableOpacity>
             </View>
