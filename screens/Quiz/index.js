@@ -6,7 +6,7 @@ import questions from './questions.js';
 
 const { width } = Dimensions.get('window');
 
-const Quiz = () => {
+const Quiz = ({navigation}) => {
  
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState({});
@@ -18,9 +18,12 @@ const Quiz = () => {
       if (currentIndex < questions.length - 1) {
         flatListRef.current.scrollToIndex({ index: currentIndex + 1 });
         setCurrentIndex(currentIndex + 1);
+      } else {
+        navigation.navigate('Auth'); // Navigate to homepage after the last question
       }
     }, 500); // Adjust this delay as needed
   };
+
 
   const renderQuestion = ({ item, index }) => (
     <View style={styles.questionContainer}>

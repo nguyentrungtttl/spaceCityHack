@@ -16,7 +16,7 @@ export default function Intro({navigation}){
                     <Text style={styles.boldText}>PathWISE</Text>
                     <Text style={styles.slogan}>Wise paths to your success</Text>
 
-                    <TouchableOpacity onPress={()=>navigation.navigate("Auth")} style={[styles.button,{marginTop:20}]}>
+                    <TouchableOpacity onPress={()=>navigation.navigate("Quiz")} style={[styles.button,{marginTop:20}]}>
                         <Text style={styles.whiteBold}>Get started</Text>
                     </TouchableOpacity>
 
