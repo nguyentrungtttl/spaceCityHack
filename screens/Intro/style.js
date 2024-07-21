@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     boldText:{
         color:"#662954",
-        fontWeight:"800",
+        // fontWeight:"bold",
         fontSize:60,
         marginTop:90
     },
@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
         borderRadius:50
     },
     whiteBold:{
-        fontWeight:"bold",
+        // fontWeight:"bold",
         color:"white",
         fontSize:17
     }

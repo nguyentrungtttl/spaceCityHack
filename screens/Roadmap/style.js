@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     whiteBold:{
-        fontWeight:"bold",
+        // fontWeight:"bold",
         color:"white",
         fontSize:16
     },
