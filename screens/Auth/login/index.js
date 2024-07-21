@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, TextInput, SafeAreaView, TouchableOpacity, Dimensions, Image } from 'react-native';
 import { styles } from './style';
 
@@ -6,6 +6,14 @@ const screenWidth = Dimensions.get('screen').width;
 const screenHeight = Dimensions.get('screen').height;
 
 export default function Login({ navigation }) {
+  const [email, setEmail] = useState('SpaceCityHack');
+  const [password, setPassword] = useState('21072024');
+
+  const handleLogin = () => {
+    // Add any additional login logic here if needed
+    navigation.navigate("Home");
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.topContainer}>
@@ -19,16 +27,29 @@ export default function Login({ navigation }) {
         <View style={{ width: '100%', marginTop: 10, alignItems: 'center' }}>
           <View style={{ flexDirection: 'row' }}>
             <Image style={styles.textinputinlineimage} source={require('../../../assets/mail.png')} />
-            <TextInput placeholder="Email address" placeholderTextColor={"gray"} style={styles.textinput} />
+            <TextInput 
+              value={email}
+              onChangeText={setEmail}
+              placeholder="Email address" 
+              placeholderTextColor={"gray"} 
+              style={styles.textinput} 
+            />
           </View>
 
           <View style={{ flexDirection: 'row' }}>
             <Image style={styles.textinputinlineimage} source={require('../../../assets/lock.png')} />
-            <TextInput placeholder="Password" placeholderTextColor={"gray"} style={styles.textinput} />
+            <TextInput 
+              value={password}
+              onChangeText={setPassword}
+              placeholder="Password" 
+              placeholderTextColor={"gray"} 
+              style={styles.textinput} 
+              secureTextEntry 
+            />
           </View>
         </View>
 
-        <TouchableOpacity onPress={() => navigation.navigate("Ready")} style={[styles.button, { marginTop: 20 }]}>
+        <TouchableOpacity onPress={handleLogin} style={[styles.button, { marginTop: 20 }]}>
           <Text style={styles.whiteBold}>Login</Text>
         </TouchableOpacity>
 
