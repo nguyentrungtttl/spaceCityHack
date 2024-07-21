@@ -6,7 +6,9 @@ const screenHeight = Dimensions.get("screen").height
 const screenWidth = Dimensions.get("screen").width
 export default function Education(){
     const [data,setData] = useState([
-        {image:require("../../../assets/school1.png"),isPressed:false,type:"Major: Business, Marketing",name:"School 1",courses:[{course:"Marketing Essentials", teach:"edX"},{course:"Google Project Management: Professional Certificate", teach:"Coursera"},{course:"Business Analytics", teach:"Harvard Business Online School"}]}
+        {image:require("../../../assets/school1.png"),isPressed:false,type:"Major: Business, Marketing",name:"Course 1",courses:[{course:"Marketing Essentials", teach:"edX"},{course:"Google Project Management: Professional Certificate", teach:"Coursera"},{course:"Business Analytics", teach:"Harvard Business Online School"}]},
+        {image:require("../../../assets/school1.png"),isPressed:false,type:"Major: Computer science, Data science",name:"Course 2",courses:[{course:"Intro to AI", teach:"edX"},{course:"Road to Machine Learning", teach:"Coursera"},{course:"EDA", teach:"Harvard Business Online School"}]},
+
     ])
     return(
         <View style={{flex:1}}>
