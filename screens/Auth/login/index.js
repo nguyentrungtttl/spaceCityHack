@@ -5,6 +5,7 @@ const screenWidth= Dimensions.get("screen").width
 const screenHeight = Dimensions.get("screen").height
 export default function Login(){
     return(
+
     <SafeAreaView style={styles.container}>
         <Image source={require("../../../assets/waving.png")} style={styles.image}/>
         <View style={[styles.box,{height:screenHeight*0.78}]}>
