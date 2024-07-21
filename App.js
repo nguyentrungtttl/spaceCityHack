@@ -6,7 +6,7 @@ export default function App(){
     return(
         <NavigationContainer independent={true}>
             <Theme.Navigator>
-                <Theme.Screen/>
+                <Theme.Screen component={Route} name="Route" options={{headerShown:false}}/>
             </Theme.Navigator>
         </NavigationContainer>
     )
