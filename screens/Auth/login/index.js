@@ -40,6 +40,6 @@ export default function Login({navigation}){
                 <Text style={styles.whiteBoldUnderlinedText}>Forgot Password</Text>
             </TouchableOpacity>
         </View>
-    </View>
+    </ SafeAreaView>
     )
 }
