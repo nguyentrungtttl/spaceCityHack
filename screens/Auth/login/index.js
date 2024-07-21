@@ -6,13 +6,9 @@ const screenWidth= Dimensions.get("screen").width
 const screenHeight = Dimensions.get("screen").height
 export default function Login({navigation}){
     return(
-    <View style={{flex:1}}>
-        <LinearGradient
-            colors={['#E65791', '#F6AAC9']}
-            start={{ x: 0, y: 0 }}
-            end={{ x: 1, y: 1 }}
-            style={{flex:1}}
-        />
+
+
+    <SafeAreaView style={styles.container}>
         <Image source={require("../../../assets/waving.png")} style={styles.image}/>
 
         <View style={[styles.box,{height:screenHeight*0.78}]}>
